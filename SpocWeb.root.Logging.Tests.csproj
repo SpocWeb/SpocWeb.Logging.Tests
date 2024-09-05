@@ -84,7 +84,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Logging\SpocWeb.root.Logging.csproj" />
+	  <ProjectReference Include="..\SpocWeb.Logging\SpocWeb.root.Logging.csproj" />
 	</ItemGroup>
 
 </Project>
