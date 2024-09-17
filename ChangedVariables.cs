@@ -2,7 +2,7 @@
 
 public class ChangedVariables
 {
-    public string ProductMaskfield { get; set; }
+    public string ProductMaskField { get; set; }
 
     public string ProductMaskValue { get; set; }
 
