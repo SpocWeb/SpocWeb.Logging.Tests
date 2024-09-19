@@ -16,6 +16,7 @@ public static class LogTest
         ProductMaskField = nameof(ChangedVariables.ProductMaskField),
     };
 
+	/// <summary> Tests parsing String Interpolation Log Statements </summary>
     [Test]
     public static void TestParsePositional()
     {
