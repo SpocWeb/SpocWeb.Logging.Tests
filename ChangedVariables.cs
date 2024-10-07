@@ -6,5 +6,5 @@ public class ChangedVariables
 
     public string ProductMaskValue { get; set; }
 
-    public string MurexValue { get; set; }
+    public string MoneyValue { get; set; }
 }
