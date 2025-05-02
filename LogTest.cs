@@ -1,8 +1,8 @@
 ﻿using NUnit.Framework;
-using org.SpocWeb.root.Logging.Tests;
+using org.SpocWeb.root.logging.Tests;
 using Shouldly;
 
-namespace org.SpocWeb.root.Logging;
+namespace org.SpocWeb.root.logging;
 
 //[TestSubject(typeof(Log))]
 public static class LogTest

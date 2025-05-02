@@ -33,7 +33,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<OutputType>Exe</OutputType>
-		<StartupObject>org.SpocWeb.root.Logging.Tests.Program</StartupObject>
+		<StartupObject>org.SpocWeb.root.logging.Tests.Program</StartupObject>
 
 		<Description>Fundamental Interfaces, Delegates, Enums and Base Classes for any Domain</Description>
 		<PackageProjectUrl>http://Spoc-Web.com</PackageProjectUrl>
@@ -75,7 +75,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Serilog" Version="4.0.1" />
+		<PackageReference Include="Serilog" Version="4.2.0" />
 		<PackageReference Include="Shouldly" Version="4.2.1" />
 	</ItemGroup>
 
@@ -84,7 +84,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\SpocWeb.Logging\SpocWeb.root.Logging.csproj" />
+	  <ProjectReference Include="..\SpocWeb.Logging\SpocWeb.root.logging.csproj" />
 	</ItemGroup>
 
 <PropertyGroup><GenerateDocumentationFile>True</GenerateDocumentationFile></PropertyGroup>
