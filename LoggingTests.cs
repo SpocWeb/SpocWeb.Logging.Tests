@@ -28,16 +28,16 @@ public class LoggingTests {
 		//	.CreateLogger();
 	}
 
+	const string userId = "User_123";
+	const string action = "DeleteAccount";
+	const string prefix = "Security";
+
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_With_Prefix() {
 		// Arrange
 		using ITestCorrelatorContext context = TestCorrelator.CreateContext();
-		var userId = "User_123";
-		var action = "DeleteAccount";
-		var prefix = "Security";
 
 		// Act
-		//_logger.LogEvent(prefix, $"Action {action} attempted by {userId}");
 		_logger.LogEvent(prefix, $"Action {action} attempted by {userId}");
 
 		// Assert
@@ -47,12 +47,32 @@ public class LoggingTests {
 		var logEvent = logEvents.First();
 
 		// Shouldly assertions for structured properties
-		logEvent.Properties["Security_action"].ToString().ShouldBe("\"DeleteAccount\"");
+		logEvent.Properties["Security_action"].ToString().ShouldBe('"' + action + '"');
 
-		logEvent.Properties["Security_userId"].ToString().ShouldBe("\"User_123\"");
+		logEvent.Properties["Security_userId"].ToString().ShouldBe('"' + userId + '"');
 
 		// Verify the Ambient Context
-		logEvent.Properties["context"].ToString().ShouldBe("\"Security\"");
+		logEvent.Properties["context"].ToString().ShouldBe('"' + prefix + '"');
+	}
+
+	[Test]
+	public void LogEvent_Should_Capture_Variable_Names_Without_Prefix() {
+		// Arrange
+		using ITestCorrelatorContext context = TestCorrelator.CreateContext();
+
+		// Act
+		_logger.LogEvent($"Action {action} attempted by {userId}");
+
+		// Assert
+		var logEvents = TestCorrelator.GetLogEventsFromCurrentContext().ToList();
+
+		logEvents.Count.ShouldBe(1);
+		var logEvent = logEvents.First();
+
+		// Shouldly assertions for structured properties
+		logEvent.Properties[nameof(action)].ToString().ShouldBe('"' + action + '"');
+
+		logEvent.Properties[nameof(userId)].ToString().ShouldBe('"' + userId + '"');
 	}
 
 	[Test]
