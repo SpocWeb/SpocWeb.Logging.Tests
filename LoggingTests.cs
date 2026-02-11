@@ -58,7 +58,7 @@ public class LoggingTests {
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_Without_Prefix() {
 		// Arrange
-		using ITestCorrelatorContext context = TestCorrelator.CreateContext();
+		using var context = TestCorrelator.CreateContext();
 
 		// Act
 		_logger.LogEvent($"Action {action} attempted by {userId}");
@@ -69,7 +69,6 @@ public class LoggingTests {
 		logEvents.Count.ShouldBe(1);
 		var logEvent = logEvents.First();
 
-		// Shouldly assertions for structured properties
 		logEvent.Properties[nameof(action)].ToString().ShouldBe('"' + action + '"');
 
 		logEvent.Properties[nameof(userId)].ToString().ShouldBe('"' + userId + '"');
