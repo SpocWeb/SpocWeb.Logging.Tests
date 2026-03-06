@@ -57,7 +57,6 @@ public class LoggingTests {
 
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_Without_Prefix() {
-		// Arrange
 		using var context = TestCorrelator.CreateContext();
 
 		// Act

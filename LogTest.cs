@@ -4,6 +4,7 @@ using Shouldly;
 
 namespace org.SpocWeb.root.logging;
 
+
 //[TestSubject(typeof(Log))]
 public static class LogTest
 {
@@ -16,13 +17,15 @@ public static class LogTest
         ProductMaskField = nameof(ChangedVariables.ProductMaskField),
     };
 
+
 	/// <summary> Tests parsing String Interpolation Log Statements </summary>
     [Test]
     public static void TestParsePositional()
     {
         var log = Log.Parse($"Failed to post to ESB. \n {_changedVariables.MoneyValue} in {_changedVariables.ProductMaskField}");
         log.Values.Length.ShouldBe(2);
-        var formatted = log.ToString();
+		log.Values.ShouldBe([_changedVariables.MoneyValue, _changedVariables.ProductMaskField]);
+		var formatted = log.ToString();
         formatted.ShouldBe(Expected);
         var pairs = log.ToDictionary();
         var keys = pairs.Keys.ToArray();
@@ -33,11 +36,12 @@ public static class LogTest
     [Test]
     public static void TestParseNamed()
     {
-        var log = Log.Parse(null, "Failed to post to ESB. \n {MoneyValue} in {productMaskField}", _changedVariables.MoneyValue, _changedVariables.ProductMaskField);
+        var log = Log.Parse("Failed to post to ESB. \n {moneyValue} in {productMaskField}", _changedVariables.MoneyValue, _changedVariables.ProductMaskField);
         log.Values.Length.ShouldBe(2);
-        var formatted = log.ToString();
+		log.Values.ShouldBe([_changedVariables.MoneyValue, _changedVariables.ProductMaskField]);
+		var formatted = log.ToString();
         formatted.ShouldBe(Expected);
         var keys = log.ToDictionary().Keys.ToArray();
-        keys.ShouldBe([ "MoneyValue", "productMaskField" ]);
+        keys.ShouldBe([ "moneyValue", "productMaskField" ]);
     }
 }
