@@ -7,10 +7,15 @@ using Shouldly;
 using Microsoft.Extensions.Logging;
 
 [TestFixture]
+/// <summary> Integration tests that verify structured Serilog events<br/>
+/// emitted via the <c>Logg</c> extension carry the expected property names,<br/>
+/// levels, exceptions, and optional context prefixes. </summary>
 public class SemanticLogTests {
 
 	private ILogger<SemanticLogTests> _logger;
 
+	/// <summary> Configures the Serilog <c>TestCorrelator</c> sink and bridges it<br/>
+	/// to <see cref="Microsoft.Extensions.Logging.ILogger{TCategoryName}"/> once per fixture. </summary>
 	[OneTimeSetUp]
 	public void GlobalSetup() {
 		// Configure the logger once for the entire test fixture
@@ -31,6 +36,8 @@ public class SemanticLogTests {
 	const string action = "DeleteAccount";
 	const string prefix = "Security";
 
+	/// <summary> Verifies that <c>Logg</c> prefixes each property name with <paramref name="prefix"/>_<br/>
+	/// and stores the prefix in a separate "context" property on the log event. </summary>
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_With_Prefix() {
 		// Arrange
@@ -56,6 +63,8 @@ public class SemanticLogTests {
 		logEvent.MessageTemplate.Text.ShouldBe("Action {Security_action} attempted by {Security_userId}");
 	}
 
+	/// <summary> Verifies that <c>Logg</c> preserves the original variable names as<br/>
+	/// property keys when no context prefix is supplied. </summary>
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_Without_Prefix() {
 		using var context = TestCorrelator.CreateContext();
@@ -77,6 +86,8 @@ public class SemanticLogTests {
 		logEvent.Level.ShouldBe(Serilog.Events.LogEventLevel.Error);
 	}
 
+	/// <summary> Verifies that calling <c>Destructure()</c> on an interpolated value causes<br/>
+	/// Serilog to capture the object's structure rather than its <c>ToString()</c> output. </summary>
 	[Test]
 	public void LogEvent_Should_Destructure_Objects_When_Requested() {
 		// Arrange

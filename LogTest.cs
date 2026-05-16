@@ -6,6 +6,8 @@ namespace org.SpocWeb.root.logging;
 
 
 //[TestSubject(typeof(Log))]
+/// <summary> NUnit tests verifying that <see cref="Log.Parse"/> correctly handles<br/>
+/// both positional (string-interpolation) and named structured-log patterns. </summary>
 public static class LogTest
 {
     private const string Expected = "Failed to post to ESB. \n MoneyValue in ProductMaskField";
@@ -33,6 +35,8 @@ public static class LogTest
 		//keys.ShouldBe([ "0", "1" ]);
     }
 
+    /// <summary> Verifies that <see cref="Log.Parse"/> extracts named placeholder keys from a<br/>
+    /// conventional message-template and returns matching values and dictionary keys. </summary>
     [Test]
     public static void TestParseNamed()
     {
