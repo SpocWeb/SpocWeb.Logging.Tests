@@ -8,6 +8,13 @@ namespace org.SpocWeb.root.logging;
 //[TestSubject(typeof(Log))]
 /// <summary> NUnit tests verifying that <see cref="Log.Parse"/> correctly handles<br/>
 /// both positional (string-interpolation) and named structured-log patterns. </summary>
+/// <remarks>
+/// ## Meta
+/// pass: 2
+/// mtime: 2026-05-15T20:55:32Z
+/// digest: 9868bef24bec4ba8cbc06882f3c61128e618d418dfac4091cc7236c2ded6fa11
+/// updated: 2026-05-19
+/// </remarks>
 public static class LogTest
 {
     private const string Expected = "Failed to post to ESB. \n MoneyValue in ProductMaskField";

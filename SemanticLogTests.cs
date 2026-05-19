@@ -10,6 +10,13 @@ using Microsoft.Extensions.Logging;
 /// <summary> Integration tests that verify structured Serilog events<br/>
 /// emitted via the <c>Logg</c> extension carry the expected property names,<br/>
 /// levels, exceptions, and optional context prefixes. </summary>
+/// <remarks>
+/// ## Meta
+/// pass: 2
+/// mtime: 2026-05-15T20:55:56Z
+/// digest: 0ec98ff147d9aaffa47e6e8f6852c9a5e66f8dce09dcf5c4436516408e357153
+/// updated: 2026-05-19
+/// </remarks>
 public class SemanticLogTests {
 
 	private ILogger<SemanticLogTests> _logger;
