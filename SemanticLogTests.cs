@@ -1,4 +1,4 @@
-﻿namespace org.SpocWeb.root.logging.Tests;
+namespace org.SpocWeb.root.logging.Tests;
 
 using NUnit.Framework;
 using Serilog;
@@ -6,6 +6,7 @@ using Serilog.Sinks.TestCorrelator;
 using Shouldly;
 using Microsoft.Extensions.Logging;
 
+/// <summary>TODO: LLM</summary>
 [TestFixture]
 /// <summary> Integration tests that verify structured Serilog events<br/>
 /// emitted via the <c>Logg</c> extension carry the expected property names,<br/>
@@ -39,8 +40,11 @@ public class SemanticLogTests {
 		//	.CreateLogger();
 	}
 
+	/// <summary>Specifies the constant user Id.</summary>
 	const string userId = "User_123";
+	/// <summary>Specifies the constant action.</summary>
 	const string action = "DeleteAccount";
+	/// <summary>Specifies the constant prefix.</summary>
 	const string prefix = "Security";
 
 	/// <summary> Verifies that <c>Logg</c> prefixes each property name with <paramref name="prefix"/>_<br/>

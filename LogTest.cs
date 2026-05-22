@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using org.SpocWeb.root.logging.Tests;
 using Shouldly;
 
@@ -17,8 +17,10 @@ namespace org.SpocWeb.root.logging;
 /// </remarks>
 public static class LogTest
 {
+    /// <summary>Specifies the constant expected.</summary>
     private const string Expected = "Failed to post to ESB. \n MoneyValue in ProductMaskField";
 
+    /// <summary>Gets the _changed Variables.</summary>
     static readonly ChangedVariables _changedVariables = new()
     {
         MoneyValue = nameof(ChangedVariables.MoneyValue),

@@ -1,4 +1,4 @@
-﻿namespace org.SpocWeb.root.logging.Tests;
+namespace org.SpocWeb.root.logging.Tests;
 
 /// <summary> Data container holding field and value names used as structured-log test fixtures. </summary>
 /// <remarks>
@@ -10,9 +10,12 @@
 /// </remarks>
 public class ChangedVariables
 {
+    /// <summary>Gets or sets the product Mask Field.</summary>
     public string ProductMaskField { get; set; }
 
+    /// <summary>Gets or sets the product Mask Value.</summary>
     public string ProductMaskValue { get; set; }
 
+    /// <summary>Gets or sets the money Value.</summary>
     public string MoneyValue { get; set; }
 }
