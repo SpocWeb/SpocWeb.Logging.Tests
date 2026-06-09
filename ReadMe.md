@@ -31,6 +31,32 @@ NUnit tests for the `Logg` structured-logging facade,
 verifying positional/named log parsing and Serilog
 semantic-log event emission.
 
+## Architecture
+
+```mermaid
+flowchart TD
+  subgraph SpocWeb.Logging.Tests
+    LogTest["LogTest (parse tests)"]
+    SemanticLogTests["SemanticLogTests (integration tests)"]
+    ChangedVariables["ChangedVariables (test-data fixture)"]
+    Logg["Logg extension (SUT)"]
+    LogParse["Log.Parse (SUT)"]
+    Serilog["Serilog TestCorrelator sink"]
+
+    LogTest -->|"calls"| LogParse
+    linkStyle 0 opacity:1
+
+    LogTest -->|"uses"| ChangedVariables
+    linkStyle 1 opacity:1
+
+    SemanticLogTests -->|"calls"| Logg
+    linkStyle 2 opacity:1
+
+    SemanticLogTests -->|"asserts via"| Serilog
+    linkStyle 3 opacity:1
+  end
+```
+
 ## Test Classes
 
 | Class | What it tests |
