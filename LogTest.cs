@@ -15,6 +15,13 @@ namespace org.SpocWeb.root.logging;
 /// digest: 9868bef24bec4ba8cbc06882f3c61128e618d418dfac4091cc7236c2ded6fa11
 /// updated: 2026-05-19
 /// </remarks>
+/// <example>
+/// <code language="yaml">
+/// pass: 2
+/// mtime: 2026-05-22T17:44:53Z
+/// digest: 67164af70d69cc9dfffbfa6beaf1ff455ae7e8d6939c24ba7b0868b95e20ae41
+/// </code>
+/// </example>
 public static class LogTest
 {
     /// <summary>Specifies the constant expected.</summary>

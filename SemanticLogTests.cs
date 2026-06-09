@@ -18,6 +18,13 @@ using Microsoft.Extensions.Logging;
 /// digest: 0ec98ff147d9aaffa47e6e8f6852c9a5e66f8dce09dcf5c4436516408e357153
 /// updated: 2026-05-19
 /// </remarks>
+/// <example>
+/// <code language="yaml">
+/// pass: 2
+/// mtime: 2026-05-24T14:19:08Z
+/// digest: fe3d4a00f7736390501df078e88a8bdfa6bea62e9c6cdca7dee12d0203649943
+/// </code>
+/// </example>
 public class SemanticLogTests {
 
 	private ILogger<SemanticLogTests> _logger;
