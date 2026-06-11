@@ -12,12 +12,12 @@ namespace org.SpocWeb.root.logging.Tests;
 /// <code language="yaml">
 /// pass: 2
 /// mtime: 2026-05-22T17:44:53Z
-/// digest: d20518cf5542f1185a0d481d2c8a2f9eaa88e3d91da31a3343ab2d08adf13926
+/// digest: 517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856
 /// </code>
 /// </example>
 class Program
 {
-	/// <summary>TODO: LLM</summary>
+	/// <summary> Test entry point; no-op — NUnit discovers and runs tests directly. </summary>
 	public static void Main() {
 
 	}

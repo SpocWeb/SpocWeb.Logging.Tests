@@ -8,8 +8,8 @@ digest:
       mtime: "2026-06-09T16:27:52Z"
       digest: "67164af70d69cc9dfffbfa6beaf1ff455ae7e8d6939c24ba7b0868b95e20ae41"
     Program:
-      mtime: "2026-06-09T16:27:52Z"
-      digest: "d20518cf5542f1185a0d481d2c8a2f9eaa88e3d91da31a3343ab2d08adf13926"
+      mtime: "2026-06-11T06:16:55Z"
+      digest: "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856"
     SemanticLogTests:
       mtime: "2026-06-09T16:27:52Z"
       digest: "fe3d4a00f7736390501df078e88a8bdfa6bea62e9c6cdca7dee12d0203649943"
