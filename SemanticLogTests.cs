@@ -6,7 +6,7 @@ using Serilog.Sinks.TestCorrelator;
 using Shouldly;
 using Microsoft.Extensions.Logging;
 
-/// <summary>TODO: LLM</summary>
+/// <summary>Semantic log tests.</summary>
 [TestFixture]
 /// <summary> Integration tests that verify structured Serilog events<br/>
 /// emitted via the `Logg` extension carry the expected property names,<br/>

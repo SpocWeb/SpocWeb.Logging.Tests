@@ -8,7 +8,7 @@ digest:
       mtime: "2026-06-09T16:27:52Z"
       digest: "67164af70d69cc9dfffbfa6beaf1ff455ae7e8d6939c24ba7b0868b95e20ae41"
     Program:
-      mtime: "2026-06-11T06:16:55Z"
+      mtime: "2026-06-11T06:17:17Z"
       digest: "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856"
     SemanticLogTests:
       mtime: "2026-06-09T16:27:52Z"
@@ -16,16 +16,6 @@ digest:
   folders: {}
 ---
 # SpocWeb.Logging.Tests
-<!-- digest-map
-local-classes:
-  ChangedVariables: mtime=2026-05-15T20:55:22Z digest=a62af09d34a7fc8fcd1bcf3fc2f287a193777ead6e78c00f1979c3df92fa8316
-  LogTest: mtime=2026-05-15T20:55:32Z digest=9868bef24bec4ba8cbc06882f3c61128e618d418dfac4091cc7236c2ded6fa11
-  Program: mtime=2025-05-02T17:50:18Z digest=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-  SemanticLogTests: mtime=2026-05-15T20:55:56Z digest=0ec98ff147d9aaffa47e6e8f6852c9a5e66f8dce09dcf5c4436516408e357153
-folders:
-folder_digest: 669916c0c604fe0a5e5bfcf34882f6b5a174645d0707f7575d55e13cd1e8f5b7
-folder_mtime: 2026-05-15T20:55:56Z
--->
 
 NUnit tests for the `Logg` structured-logging facade,
 verifying positional/named log parsing and Serilog
