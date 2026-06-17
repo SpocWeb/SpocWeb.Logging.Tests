@@ -19,7 +19,8 @@ namespace org.SpocWeb.root.logging;
 /// <code language="yaml">
 /// pass: 2
 /// mtime: 2026-05-22T17:44:53Z
-/// digest: 67164af70d69cc9dfffbfa6beaf1ff455ae7e8d6939c24ba7b0868b95e20ae41
+/// digest: 94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207
+/// stale: true
 /// </code>
 /// </example>
 public static class LogTest

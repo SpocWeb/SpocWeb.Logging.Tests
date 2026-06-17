@@ -7,6 +7,14 @@ using Shouldly;
 using Microsoft.Extensions.Logging;
 
 /// <summary>Semantic log tests.</summary>
+///
+/// <example>
+/// <code language="yaml">
+/// pass: 2
+/// mtime: 2026-06-14T08:43:41Z
+/// digest: 7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca
+/// </code>
+/// </example>
 [TestFixture]
 /// <summary> Integration tests that verify structured Serilog events<br/>
 /// emitted via the `Logg` extension carry the expected property names,<br/>
