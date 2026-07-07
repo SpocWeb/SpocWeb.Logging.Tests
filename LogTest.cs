@@ -20,7 +20,6 @@ namespace org.SpocWeb.root.logging;
 /// pass: 2
 /// mtime: 2026-05-22T17:44:53Z
 /// digest: 94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207
-/// stale: true
 /// </code>
 /// </example>
 public static class LogTest
