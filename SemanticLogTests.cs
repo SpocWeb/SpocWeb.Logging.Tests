@@ -5,6 +5,7 @@ using Serilog;
 using Serilog.Sinks.TestCorrelator;
 using Shouldly;
 using Microsoft.Extensions.Logging;
+using org.SpocWeb.root.Attributes;
 
 /// <summary>Semantic log tests.</summary>
 ///
@@ -15,6 +16,7 @@ using Microsoft.Extensions.Logging;
 /// digest: 7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca
 /// </code>
 /// </example>
+[DocState(Pass = 2, MTime = "2026-08-03T19:25:31Z", Digest = "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca", Stale = false, Path = "SemanticLogTests.cs", Since = "2026-08-18")]
 [TestFixture]
 /// <summary> Integration tests that verify structured Serilog events<br/>
 /// emitted via the `Logg` extension carry the expected property names,<br/>
@@ -26,13 +28,6 @@ using Microsoft.Extensions.Logging;
 /// digest: 0ec98ff147d9aaffa47e6e8f6852c9a5e66f8dce09dcf5c4436516408e357153
 /// updated: 2026-05-19
 /// </remarks>
-/// <example>
-/// <code language="yaml">
-/// pass: 2
-/// mtime: 2026-05-24T14:19:08Z
-/// digest: fe3d4a00f7736390501df078e88a8bdfa6bea62e9c6cdca7dee12d0203649943
-/// </code>
-/// </example>
 public class SemanticLogTests {
 
 	private ILogger<SemanticLogTests> _logger;

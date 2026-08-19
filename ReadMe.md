@@ -2,16 +2,16 @@
 digest:
   local-classes:
     ChangedVariables:
-      mtime: "2026-06-09T16:27:52Z"
+      mtime: "2026-08-18T17:17:16Z"
       digest: "77d93cf72221d129132dc1a0eb8fd8c3f8c8cd462302625a599ce8d7ae60fdb2"
     LogTest:
-      mtime: "2026-07-07T05:37:18Z"
+      mtime: "2026-08-18T17:17:16Z"
       digest: "94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207"
     Program:
-      mtime: "2026-06-11T06:17:17Z"
+      mtime: "2026-08-18T17:17:16Z"
       digest: "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856"
     SemanticLogTests:
-      mtime: "2026-06-17T03:32:21Z"
+      mtime: "2026-08-18T17:17:16Z"
       digest: "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca"
   folders: {}
 ---
@@ -79,5 +79,5 @@ flowchart TD
 |---|---|
 | [ChangedVariables](ChangedVariables.cs) | Data container holding field and value names used as structured-log test fixtures. |
 | [LogTest](LogTest.cs) | NUnit tests verifying that Parse correctly handles  both positional (string-interpolation) and named structured-log patterns. |
-| [Program](Program.cs) | Application entry point for the SpocWeb. |
+| [Program](Program.cs) | Application entry point for the SpocWeb.Logging.Tests project. |
 | [SemanticLogTests](SemanticLogTests.cs) | Semantic log tests. |
