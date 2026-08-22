@@ -1,4 +1,8 @@
 ---
+concepts: []
+facets: {}
+tags: []
+description: "NUnit tests for the `Logg` structured-logging facade, verifying positional/named log parsing and Serilog semantic-log event emission."
 digest:
   local-classes:
     ChangedVariables:
