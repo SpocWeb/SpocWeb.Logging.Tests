@@ -32,6 +32,7 @@ public class SemanticLogTests {
 
 	/// <summary> Configures the Serilog `TestCorrelator` sink and bridges it<br/>
 	/// to <see cref="Microsoft.Extensions.Logging.ILogger{TCategoryName}"/> once per fixture. </summary>
+	[System.ComponentModel.Description("Configures the Serilog `TestCorrelator` sink and bridges it  to ILogger once per fixture.")]
 	[OneTimeSetUp]
 	public void GlobalSetup() {
 		// Configure the logger once for the entire test fixture
@@ -57,6 +58,7 @@ public class SemanticLogTests {
 
 	/// <summary> Verifies that `Logg` prefixes each property name with <paramref name="prefix"/>_<br/>
 	/// and stores the prefix in a separate "context" property on the log event. </summary>
+	[System.ComponentModel.Description("Verifies that `Logg` prefixes each property name with prefix_  and stores the prefix in a separate \"context\" property on the log event.")]
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_With_Prefix() {
 		// Arrange
@@ -84,6 +86,7 @@ public class SemanticLogTests {
 
 	/// <summary> Verifies that `Logg` preserves the original variable names as<br/>
 	/// property keys when no context prefix is supplied. </summary>
+	[System.ComponentModel.Description("Verifies that `Logg` preserves the original variable names as  property keys when no context prefix is supplied.")]
 	[Test]
 	public void LogEvent_Should_Capture_Variable_Names_Without_Prefix() {
 		using var context = TestCorrelator.CreateContext();
@@ -107,6 +110,7 @@ public class SemanticLogTests {
 
 	/// <summary> Verifies that calling `Destructure()` on an interpolated value causes<br/>
 	/// Serilog to capture the object's structure rather than its `ToString()` output. </summary>
+	[System.ComponentModel.Description("Verifies that calling `Destructure()` on an interpolated value causes  Serilog to capture the object's structure rather than its `ToString()` output.")]
 	[Test]
 	public void LogEvent_Should_Destructure_Objects_When_Requested() {
 		// Arrange

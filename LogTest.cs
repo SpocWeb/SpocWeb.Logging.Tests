@@ -30,6 +30,7 @@ public static class LogTest
 
 
 	/// <summary> Tests parsing String Interpolation Log Statements </summary>
+    [System.ComponentModel.Description("Tests parsing String Interpolation Log Statements")]
     [Test]
     public static void TestParsePositional()
     {
@@ -46,6 +47,7 @@ public static class LogTest
 
     /// <summary> Verifies that <see cref="Log.Parse"/> extracts named placeholder keys from a<br/>
     /// conventional message-template and returns matching values and dictionary keys. </summary>
+    [System.ComponentModel.Description("Verifies that Parse extracts named placeholder keys from a  conventional message-template and returns matching values and dictionary keys.")]
     [Test]
     public static void TestParseNamed()
     {
