@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using org.SpocWeb.root.logging.Tests;
 using Shouldly;
+using org.SpocWeb.root.Attributes;
 
 namespace org.SpocWeb.root.logging;
 
@@ -15,6 +16,7 @@ namespace org.SpocWeb.root.logging;
 /// digest: 9868bef24bec4ba8cbc06882f3c61128e618d418dfac4091cc7236c2ded6fa11
 /// updated: 2026-05-19
 /// </remarks>
+[DocState(Pass = 2, MTime = "2026-08-22T19:49:30Z", Digest = "94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207", Stale = false, Path = "LogTest.cs", Since = "2026-08-23")]
 public static class LogTest
 {
     /// <summary>Specifies the constant expected.</summary>
