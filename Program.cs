@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using org.SpocWeb.root.Attributes;
 namespace org.SpocWeb.root.logging.Tests;
 
@@ -10,7 +10,7 @@ namespace org.SpocWeb.root.logging.Tests;
 /// digest: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 /// updated: 2026-05-19
 /// </remarks>
-[DocState(Pass = 2, MTime = "2026-08-23T11:34:21Z", Digest = "b389614586ba87348e59dfb39a74134e857fe5e37fc7d5d5cc74bd071404583d", Stale = true, Path = "Program.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-08-23T20:45:52Z", Digest = "b389614586ba87348e59dfb39a74134e857fe5e37fc7d5d5cc74bd071404583d", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
 class Program
 {
 	/// <summary> Test entry point; no-op — NUnit discovers and runs tests directly. </summary>
