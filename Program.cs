@@ -10,7 +10,7 @@ namespace org.SpocWeb.root.logging.Tests;
 /// digest: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 /// updated: 2026-05-19
 /// </remarks>
-[DocState(Pass = 2, MTime = "2026-08-23T20:45:52Z", Digest = "b389614586ba87348e59dfb39a74134e857fe5e37fc7d5d5cc74bd071404583d", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-08-25T02:32:07Z", Digest = "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
 class Program
 {
 	/// <summary> Test entry point; no-op — NUnit discovers and runs tests directly. </summary>
