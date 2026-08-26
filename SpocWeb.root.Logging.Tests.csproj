@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		
 		<EnableDefaultItems>true</EnableDefaultItems>
@@ -91,10 +91,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include="..\SpocWeb.Proxies\Attributes\TagsAttribute.cs" Link="_Links\TagsAttribute.cs" />
-		<Compile Include="..\SpocWeb.Proxies\Attributes\ConceptAttribute.cs" Link="_Links\ConceptAttribute.cs" />
-		<Compile Include="..\SpocWeb.Proxies\Attributes\DocStateAttribute.cs" Link="_Links\DocStateAttribute.cs" />
-		<Compile Include="..\SpocWeb.Proxies\Attributes\FacetsAttribute.cs" Link="_Links\FacetsAttribute.cs" />
+		<Compile Include="..\SpocWeb.Proxies\Attributes\RmgAttributes.cs" Link="_Links\RmgAttributes.cs" />
+		<Compile Include="..\SpocWeb.Proxies\Attributes\RmgAttributes.IsExternalInit.cs" Link="_Links\RmgAttributes.IsExternalInit.cs" />
 	</ItemGroup>
 
 <PropertyGroup><GenerateDocumentationFile>True</GenerateDocumentationFile></PropertyGroup>
