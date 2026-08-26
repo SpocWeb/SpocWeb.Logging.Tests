@@ -90,5 +90,12 @@
 	  <ProjectReference Include="..\SpocWeb.Logging\SpocWeb.root.logging.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<Compile Include="..\SpocWeb.Proxies\Attributes\TagsAttribute.cs" Link="_Links\TagsAttribute.cs" />
+		<Compile Include="..\SpocWeb.Proxies\Attributes\ConceptAttribute.cs" Link="_Links\ConceptAttribute.cs" />
+		<Compile Include="..\SpocWeb.Proxies\Attributes\DocStateAttribute.cs" Link="_Links\DocStateAttribute.cs" />
+		<Compile Include="..\SpocWeb.Proxies\Attributes\FacetsAttribute.cs" Link="_Links\FacetsAttribute.cs" />
+	</ItemGroup>
+
 <PropertyGroup><GenerateDocumentationFile>True</GenerateDocumentationFile></PropertyGroup>
 </Project>
