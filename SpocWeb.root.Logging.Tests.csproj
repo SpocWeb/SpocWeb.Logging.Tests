@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		
 		<EnableDefaultItems>true</EnableDefaultItems>
@@ -91,7 +91,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Include="..\SpocWeb.Proxies\Attributes\RmgAttributes.cs" Link="_Links\RmgAttributes.cs" />
 		<Compile Include="..\SpocWeb.Proxies\Attributes\RmgAttributes.IsExternalInit.cs" Link="_Links\RmgAttributes.IsExternalInit.cs" />
 	</ItemGroup>
 
