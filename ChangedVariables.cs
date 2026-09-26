@@ -14,31 +14,31 @@ namespace org.SpocWeb.root.logging.Tests;
 [Tags("code/data_container", "code/test_fixture")]
 [System.ComponentModel.Description("Data container holding field and value names used as structured-log test fixtures.")]
 [DocState(Pass = 2, MTime = "2026-08-26T05:13:00Z", Digest = "77d93cf72221d129132dc1a0eb8fd8c3f8c8cd462302625a599ce8d7ae60fdb2", Stale = false, Path = "ChangedVariables.cs", Since = "2026-08-23")]
-[Concept("logging")]
-[Concept("testing")]
+[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+[Concept("Technology\\IT\\Software\\Logging.md")]
 public class ChangedVariables
 {
     /// <summary>Gets or sets the product Mask Field.</summary>
     [Facets(Layer = "infrastructure", Status = "active", Complexity = 1)]
     [Tags("code/data_container", "code/test_fixture")]
     [System.ComponentModel.Description("Gets or sets the product Mask Field.")]
-    [Concept("logging")]
-    [Concept("testing")]
+    [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+    [Concept("Technology\\IT\\Software\\Logging.md")]
     public string ProductMaskField { get; set; }
 
     /// <summary>Gets or sets the product Mask Value.</summary>
     [Facets(Layer = "infrastructure", Status = "active", Complexity = 1)]
     [Tags("code/data_container", "code/test_fixture")]
     [System.ComponentModel.Description("Gets or sets the product Mask Value.")]
-    [Concept("logging")]
-    [Concept("testing")]
+    [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+    [Concept("Technology\\IT\\Software\\Logging.md")]
     public string ProductMaskValue { get; set; }
 
     /// <summary>Gets or sets the money Value.</summary>
     [Facets(Layer = "infrastructure", Status = "active", Complexity = 1)]
     [Tags("code/data_container", "code/test_fixture")]
     [System.ComponentModel.Description("Gets or sets the money Value.")]
-    [Concept("logging")]
-    [Concept("testing")]
+    [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+    [Concept("Technology\\IT\\Software\\Logging.md")]
     public string MoneyValue { get; set; }
 }

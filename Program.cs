@@ -14,14 +14,14 @@ namespace org.SpocWeb.root.logging.Tests;
 [Tags("code/entry_point")]
 [System.ComponentModel.Description("Application entry point for the SpocWeb.Logging.Tests project.")]
 [DocState(Pass = 2, MTime = "2026-08-26T05:13:00Z", Digest = "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
-[Concept("testing")]
+[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
 class Program
 {
 	/// <summary> Test entry point; no-op — NUnit discovers and runs tests directly. </summary>
 	[Facets(Layer = "infrastructure", Status = "partial", Complexity = 1)]
 	[Tags("code/entry_point")]
 	[System.ComponentModel.Description("Test entry point; no-op — NUnit discovers and runs tests directly.")]
-	[Concept("testing")]
+	[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
 	public static void Main() {
 
 	}

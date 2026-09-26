@@ -1,11 +1,10 @@
 ---
+facet-complexity: 1
+facet-status: active
+facet-layer: infrastructure
 concepts:
-  - logging
-  - testing
-facets:
-  layer: infrastructure
-  status: active
-  complexity: 1
+  - Technology\IT\Software\Logging.md
+  - Technology\IT\Software\SW~Programming\Prog~Language\Prog~Paradigm\Prog~Functional\Prog~Rust\Rust~Testing.md
 tags:
   - code/nunit_test
   - code/structured_logging

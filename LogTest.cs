@@ -20,8 +20,8 @@ namespace org.SpocWeb.root.logging;
 [Tags("code/nunit_test", "code/test_fixture")]
 [System.ComponentModel.Description("NUnit tests verifying that Parse correctly handles  both positional (string-interpolation) and named structured-log patterns.")]
 [DocState(Pass = 2, MTime = "2026-08-26T05:13:00Z", Digest = "94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207", Stale = false, Path = "LogTest.cs", Since = "2026-08-23")]
-[Concept("logging")]
-[Concept("testing")]
+[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+[Concept("Technology\\IT\\Software\\Logging.md")]
 public static class LogTest
 {
     /// <summary>Specifies the constant expected.</summary>
@@ -41,8 +41,8 @@ public static class LogTest
     [Tags("code/nunit_test")]
     [System.ComponentModel.Description("Tests parsing String Interpolation Log Statements")]
     [Test]
-    [Concept("logging")]
-    [Concept("testing")]
+    [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+    [Concept("Technology\\IT\\Software\\Logging.md")]
     public static void TestParsePositional()
     {
         var log = Log.Parse($"Failed to post to ESB. \n {_changedVariables.MoneyValue} in {_changedVariables.ProductMaskField}");
@@ -62,8 +62,8 @@ public static class LogTest
     [Tags("code/nunit_test")]
     [System.ComponentModel.Description("Verifies that Parse extracts named placeholder keys from a  conventional message-template and returns matching values and dictionary keys.")]
     [Test]
-    [Concept("logging")]
-    [Concept("testing")]
+    [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
+    [Concept("Technology\\IT\\Software\\Logging.md")]
     public static void TestParseNamed()
     {
         var log = Log.Parse("Failed to post to ESB. \n {moneyValue} in {productMaskField}", _changedVariables.MoneyValue, _changedVariables.ProductMaskField);
