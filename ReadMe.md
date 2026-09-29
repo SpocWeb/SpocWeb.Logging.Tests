@@ -24,6 +24,11 @@ digest:
       mtime: "2026-08-18T17:17:16Z"
       digest: "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca"
   folders: {}
+related:
+  - path: ../_Matthias/Code/NET/_SpocWeb.Root/_std/SpocWeb.IMaths/tensors/tests
+    shared-tags: [code/nunit_test]
+  - path: ../_Matthias/Code/NET/_root/_projects/db.vm/Coll/Tests
+    shared-tags: [code/nunit_test]
 ---
 # SpocWeb.Logging.Tests
 
