@@ -12,7 +12,7 @@ using org.SpocWeb.root.Attributes;
 [Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
 [Tags("code/nunit_test", "code/integration_test")]
 [System.ComponentModel.Description("Semantic log tests.")]
-[DocState(Pass = 2, MTime = "2026-09-28T23:37:30Z", Digest = "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca", Stale = false, Path = "SemanticLogTests.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-09-29T01:15:00Z", Digest = "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca", Stale = false, Path = "SemanticLogTests.cs", Since = "2026-08-23")]
 [TestFixture]
 [Concept("observability")]
 [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]

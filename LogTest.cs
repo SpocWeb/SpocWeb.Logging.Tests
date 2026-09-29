@@ -19,7 +19,7 @@ namespace org.SpocWeb.root.logging;
 [Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
 [Tags("code/nunit_test", "code/test_fixture")]
 [System.ComponentModel.Description("NUnit tests verifying that Parse correctly handles both positional (string-interpolation) and named structured-log patterns.")]
-[DocState(Pass = 2, MTime = "2026-09-28T23:37:30Z", Digest = "94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207", Stale = false, Path = "LogTest.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-09-29T01:15:00Z", Digest = "94888f5380c5428a3a4d5addb7594ff85b12a72aa94825922d7085d970429207", Stale = false, Path = "LogTest.cs", Since = "2026-08-23")]
 [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
 [Concept("Technology\\IT\\Software\\Logging.md")]
 public static class LogTest

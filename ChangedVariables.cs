@@ -13,7 +13,7 @@ namespace org.SpocWeb.root.logging.Tests;
 [Facets(Layer = "infrastructure", Status = "active", Complexity = 1)]
 [Tags("code/data_container", "code/test_fixture")]
 [System.ComponentModel.Description("Data container holding field and value names used as structured-log test fixtures.")]
-[DocState(Pass = 2, MTime = "2026-09-28T23:37:30Z", Digest = "77d93cf72221d129132dc1a0eb8fd8c3f8c8cd462302625a599ce8d7ae60fdb2", Stale = false, Path = "ChangedVariables.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-09-29T01:15:00Z", Digest = "77d93cf72221d129132dc1a0eb8fd8c3f8c8cd462302625a599ce8d7ae60fdb2", Stale = false, Path = "ChangedVariables.cs", Since = "2026-08-23")]
 [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
 [Concept("Technology\\IT\\Software\\Logging.md")]
 public class ChangedVariables
