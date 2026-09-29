@@ -13,7 +13,7 @@ namespace org.SpocWeb.root.logging.Tests;
 [Facets(Layer = "infrastructure", Status = "partial", Complexity = 1)]
 [Tags("code/entry_point")]
 [System.ComponentModel.Description("Application entry point for the SpocWeb.Logging.Tests project.")]
-[DocState(Pass = 2, MTime = "2026-08-26T05:13:00Z", Digest = "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-09-28T23:37:30Z", Digest = "517e8a72513e72240f648456893a56215d3fe4197ff08d36aabc26593c964856", Stale = false, Path = "Program.cs", Since = "2026-08-23")]
 [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
 class Program
 {

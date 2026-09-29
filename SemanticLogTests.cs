@@ -10,9 +10,9 @@ using org.SpocWeb.root.Attributes;
 /// <summary>Semantic log tests.</summary>
 ///
 [Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
-[Tags("code/integration_test", "code/nunit_test")]
+[Tags("code/nunit_test", "code/integration_test")]
 [System.ComponentModel.Description("Semantic log tests.")]
-[DocState(Pass = 2, MTime = "2026-08-26T05:13:00Z", Digest = "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca", Stale = false, Path = "SemanticLogTests.cs", Since = "2026-08-23")]
+[DocState(Pass = 2, MTime = "2026-09-28T23:37:30Z", Digest = "7185aea50ffaf2f162f5f170ec028363a28737ee6439205771bca8e412cf66ca", Stale = false, Path = "SemanticLogTests.cs", Since = "2026-08-23")]
 [TestFixture]
 [Concept("observability")]
 [Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
@@ -34,8 +34,8 @@ public class SemanticLogTests {
 	/// <summary> Configures the Serilog `TestCorrelator` sink and bridges it<br/>
 	/// to <see cref="Microsoft.Extensions.Logging.ILogger{TCategoryName}"/> once per fixture. </summary>
 	[Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
-	[Tags("code/integration_test", "code/nunit_test")]
-	[System.ComponentModel.Description("Configures the Serilog `TestCorrelator` sink and bridges it  to ILogger once per fixture.")]
+	[Tags("code/nunit_test", "code/integration_test")]
+	[System.ComponentModel.Description("Configures the Serilog `TestCorrelator` sink and bridges it to ILogger once per fixture.")]
 	[OneTimeSetUp]
 	[Concept("observability")]
 	[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
@@ -65,8 +65,8 @@ public class SemanticLogTests {
 	/// <summary> Verifies that `Logg` prefixes each property name with <paramref name="prefix"/>_<br/>
 	/// and stores the prefix in a separate "context" property on the log event. </summary>
 	[Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
-	[Tags("code/integration_test", "code/nunit_test")]
-	[System.ComponentModel.Description("Verifies that `Logg` prefixes each property name with prefix_  and stores the prefix in a separate \"context\" property on the log event.")]
+	[Tags("code/nunit_test", "code/integration_test")]
+	[System.ComponentModel.Description("Verifies that `Logg` prefixes each property name with prefix_ and stores the prefix in a separate \"context\" property on the log event.")]
 	[Test]
 	[Concept("observability")]
 	[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
@@ -98,8 +98,8 @@ public class SemanticLogTests {
 	/// <summary> Verifies that `Logg` preserves the original variable names as<br/>
 	/// property keys when no context prefix is supplied. </summary>
 	[Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
-	[Tags("code/integration_test", "code/nunit_test")]
-	[System.ComponentModel.Description("Verifies that `Logg` preserves the original variable names as  property keys when no context prefix is supplied.")]
+	[Tags("code/nunit_test", "code/integration_test")]
+	[System.ComponentModel.Description("Verifies that `Logg` preserves the original variable names as property keys when no context prefix is supplied.")]
 	[Test]
 	[Concept("observability")]
 	[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
@@ -127,8 +127,8 @@ public class SemanticLogTests {
 	/// <summary> Verifies that calling `Destructure()` on an interpolated value causes<br/>
 	/// Serilog to capture the object's structure rather than its `ToString()` output. </summary>
 	[Facets(Layer = "infrastructure", Status = "active", Complexity = 2)]
-	[Tags("code/integration_test", "code/nunit_test")]
-	[System.ComponentModel.Description("Verifies that calling `Destructure()` on an interpolated value causes  Serilog to capture the object's structure rather than its `ToString()` output.")]
+	[Tags("code/nunit_test", "code/integration_test")]
+	[System.ComponentModel.Description("Verifies that calling `Destructure()` on an interpolated value causes Serilog to capture the object's structure rather than its `ToString()` output.")]
 	[Test]
 	[Concept("observability")]
 	[Concept("Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md")]
