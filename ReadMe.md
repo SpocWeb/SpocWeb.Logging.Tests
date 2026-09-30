@@ -29,6 +29,47 @@ related:
     shared-tags: [code/nunit_test]
   - path: ../_Matthias/Code/NET/_root/_projects/db.vm/Coll/Tests
     shared-tags: [code/nunit_test]
+dv_has_:
+  sub_:
+    folders: 0
+    files: 16
+    units: 4
+    facet_:
+      layer_:
+        infrastructure: 4
+      status_:
+        active: 3
+        partial: 1
+      complexity_:
+        "1": 2
+        "2": 2
+    tag_:
+      code_:
+        nunit_test: 2
+        test_fixture: 2
+        data_container: 1
+        entry_point: 1
+        integration_test: 1
+    concept_:
+      "Technology\\IT\\Software\\Logging.md": 3
+      "Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md": 4
+      observability: 1
+has_sub_folders: 0
+has_sub_files: 16
+has_sub_units: 4
+has_sub_facet_layer_infrastructure: 4
+has_sub_facet_status_active: 3
+has_sub_facet_status_partial: 1
+has_sub_facet_complexity_1: 2
+has_sub_facet_complexity_2: 2
+has_sub_tag_code_nunit_test: 2
+has_sub_tag_code_test_fixture: 2
+has_sub_tag_code_data_container: 1
+has_sub_tag_code_entry_point: 1
+has_sub_tag_code_integration_test: 1
+has_sub_concept_technology_it_software_logging_md: 3
+has_sub_concept_technology_it_software_sw_programming_prog_language_prog_paradigm_prog_functional_prog_rust_rust_testing_md: 4
+has_sub_concept_observability: 1
 ---
 # SpocWeb.Logging.Tests
 
