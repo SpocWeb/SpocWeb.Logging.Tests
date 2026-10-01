@@ -51,8 +51,8 @@ dv_has_:
         entry_point: 1
         integration_test: 1
     concept_:
-      "Technology\\IT\\Software\\Logging.md": 3
       "Technology\\IT\\Software\\SW~Programming\\Prog~Language\\Prog~Paradigm\\Prog~Functional\\Prog~Rust\\Rust~Testing.md": 4
+      "Technology\\IT\\Software\\Logging.md": 3
       observability: 1
 has_sub_folders: 0
 has_sub_files: 16
@@ -67,8 +67,8 @@ has_sub_tag_code_test_fixture: 2
 has_sub_tag_code_data_container: 1
 has_sub_tag_code_entry_point: 1
 has_sub_tag_code_integration_test: 1
-has_sub_concept_technology_it_software_logging_md: 3
 has_sub_concept_technology_it_software_sw_programming_prog_language_prog_paradigm_prog_functional_prog_rust_rust_testing_md: 4
+has_sub_concept_technology_it_software_logging_md: 3
 has_sub_concept_observability: 1
 ---
 # SpocWeb.Logging.Tests
